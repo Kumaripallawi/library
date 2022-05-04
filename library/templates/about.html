@@ -1,0 +1,116 @@
+{% extends 'navigationbar.html' %} {% load static %} {% block body%}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      img {
+        border-radius: 5px 5px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="about-section">
+      <h1>Welcome in Our Library</h1>
+      <p>Nothing is pleasanter than exploring a Library.</p>
+      <p>Without Libraries What have We???We have no past and no future.</p>
+    </div>
+
+    <h2 style="text-align: center">Our Facilities and Services</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/pk.2.jpg" alt="Jane" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img
+            src="/static/images/aboutpic.2.jpg"
+            alt="Mike"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/p.12.jfif" alt="John" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/img.3.jpg" alt="Mike" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/img.1.jpg" alt="Mike" style="width: 100%" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/pri.2.jpg" alt="Mike" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock body %}

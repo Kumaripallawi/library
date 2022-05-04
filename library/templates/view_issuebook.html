@@ -1,0 +1,44 @@
+
+
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body%}
+
+
+<div class="container" style ="margin-top:50px">
+<h2 class="text-center">View Issuebook</h2>
+<br><br>
+<table class="table table:hover" id="example">
+ <thead>
+ <tr>
+  <th>BookName</th>
+  <th>StudentName</th>
+  <th>Issuedate</th>
+  <th>Returndate</th>
+  <th>Time</th>
+  <th>Delete</th>
+ </tr>
+ </thead>
+
+<tbody>
+{% for i in issue %}
+<tr>
+    
+    <td>{{i.book}}</td>
+    <td>{{i.student}}</td>
+    <td>{{i.issuedate}}</td>
+    <td>{{i.returndate}}</td>
+    <td>{{i.time1}}</td>
+    <td><a href="{% url 'delete_issuebook' i.id %}" onclick="return confirm('Are you really want to delete?')" class='btn btn-danger'>Delete</a></td>
+</tr>
+{% endfor %}
+
+</tbody>
+</table>
+</div>
+
+
+
+
+{% endblock body %}
+

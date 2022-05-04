@@ -1,0 +1,52 @@
+
+
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body%}
+<style>
+ .mydivstyle:hover{
+box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+transform:translate(-20px);
+}
+</style>
+
+<body id="bg" style="background-image: url('{% static "images/contact.1.jpg" %}')";>
+
+<div class="container" style ="margin-top:50px">
+<h2 class="text-center">Contact Us</h2>
+<br><br>
+
+<div class="row mt-5 text-center">
+<div class="col-lg-3 col-sm-6 mydivstyle">
+<h4> <i class="fas fa-phone-volume"></i>Contact </h4>
+<p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+91 6789452356"> +91 6202569071</a></p>
+</div>
+
+
+
+
+<div class="col-lg-3 col-sm-6 mydivstyle">
+<h4> <i class="fas fa-envelope"></i>Send Email</h4>
+<p class="mt-3 font-weight-bold"><a class="text-danger" href="mailto:pallawikumari123@gmail.com"> pallawikumaribth80@gmail.com</a></p>
+</div>
+
+
+
+<div class="col-lg-3 col-sm-6 mydivstyle">
+<h4> <i class="fas fa-address-card"></i>Library Address </h4>
+<p class="mt-3 font-weight-bold"><a class="text-danger" href="http://maps.google.com/maps?q= Amritsar College of Engineering and Technology + Amritsar"> Amritsar College of Engineering and Technology Amritsar</a></p>
+</div>
+
+
+<div class="col-lg-3 col-sm-6 mydivstyle">
+<h4> <i class="fas fa-address-card"></i>Library Hours </h4>
+<p class="mt-3 font-weight-bold text-danger">9:00AM to 6:00PM </p>
+</div>
+
+
+
+
+</div>
+</div>
+{% endblock body %}
+
